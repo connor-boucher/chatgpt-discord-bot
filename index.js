@@ -30,6 +30,7 @@ const askHandler = async (interaction) => {
         const question = interaction.options.getString('question');
         const response = await chatGPT.sendMessage(question);
         await interaction.editReply(response.text);
+        console.info(`[*] Responded to prompt`);
     } catch (e) {
         await interaction.editReply('Something went wrong');
         console.error(`[!] Encountered an error: ${e}`);
@@ -51,8 +52,6 @@ bot.on('ready', () => console.info("[+] Bot online"));
 bot.on('interactionCreate', async (interaction) => {
     if (interaction.isChatInputCommand())
         askHandler(interaction);
-
-    console.info(`[*] Responded to prompt`);
 });
 
 // Connect the bot and respond to prompts.
