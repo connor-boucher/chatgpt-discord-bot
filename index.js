@@ -31,6 +31,7 @@ const askHandler = async (interaction) => {
         const response = await chatGPT.sendMessage(question);
         await interaction.editReply(response.text);
     } catch (e) {
+        await interaction.editReply('Something went wrong');
         console.error(`[!] Encountered an error: ${e}`);
     }
 }

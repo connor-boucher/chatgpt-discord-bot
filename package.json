@@ -1,7 +1,7 @@
 {
   "name": "chatgpt-discord-bot",
   "description": "Discord bot designed to generate novel responses using ChatGPT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "index.js",
   "type": "module",
   "scripts": {
