@@ -1,6 +1,8 @@
 # ChatGPT Discord Bot
 Discord bot designed to generate novel responses using ChatGPT
 
+Demonstration
+:-----------------------------:
 ![Demonstration](docs/demo.gif)
 
 ## Setup and Usage
